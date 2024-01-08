@@ -11,110 +11,114 @@
 </head>
 
 <body>
-    <main class="coloreBordeaux">
+    <main>
+        <div class="h-100 coloreBordeaux">
 
-        <div class="text-center py-4">
-            <h2 class="text-white text-uppercase">calcola il prezzo del tuo biglietto</h2>
-        </div>
-
-        <div class="col-10 border border-2 bg-white justify-content-center m-auto rounded-3 pt-3">
-            <div class="d-flex justify-content-center gap-5">
-                <div class="text-center">
-                    <p class="text-capitalize colorBordeaux fs-4">nome cognome</p>
-                    <input id="risultatoNome" type="text" class="borderBordeaux rounded-2">
-
-                </div>
-
-                <div class="text-center">
-                    <p class="text-capitalize colorBordeaux fs-4">km da percorrere</p>
-                    <input type="text" id="kilometri" class="borderBordeaux rounded-2">
-
-                </div>
-
-                <div class="text-center">
-                    <p class="text-capitalize colorBordeaux fs-4">fascia d'età</p>
-                    <input type="text" id="eta" class="borderBordeaux rounded-2">
-                </div>
+            <div class="text-center py-4">
+                <h2 class="text-white text-uppercase">calcola il prezzo del tuo biglietto</h2>
             </div>
 
-
-
-            <div class="py-5">
-
-                <div class="d-flex justify-content-center gap-3">
-                    <button id="bottone" class="colorBordeaux text-capitalize rounded-3 fw-bold  fs-4">
-                        genera
-                    </button>
-
-                    <button id="bottone" class="colorBordeaux text-capitalize rounded-3 fw-bold  fs-4">
-                        annulla
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="py-3">
-            <h2 class="text-white text-uppercase text-center">il tuo biglietto</h2>
-        </div>
-
-        <div class="bg-white col-10 m-auto p-3">
-
-            <div class="p-2">
-                <h3 class="text-uppercase">dettaglio passeggeri</h3>
-            </div>
-
-            <div class="d-flex border-top border-bottom border-2 border-secondary ">
-
-                <div class="bg-secondary me-2 p-2">
-                    <h3 class="text-uppercase fs-4">nome passeggero</h3>
-                    <p id="risultatoNomeOutput"></p>
-
-                </div>
-
-                <div class="d-flex justify-content-between w-75 p-2">
-                    <div>
-                        <p class="text-capitalize fw-bold ">offerta</p>
-                        <p></p>
+            <div class="col-10 border shadow-lg bg-white justify-content-center m-auto rounded-4 pt-3">
+                <div class="d-flex justify-content-center gap-5">
+                    <div class="text-center">
+                        <p class="text-capitalize colorBordeaux fs-4">nome cognome</p>
+                        <input id="risultatoNome" type="text" class="borderBordeaux rounded-2">
 
                     </div>
 
-                    <div>
-                        <p class="text-capitalize fw-bold ">carozza</p>
-                        <p></p>
+                    <div class="text-center">
+                        <p class="text-capitalize colorBordeaux fs-4">km da percorrere</p>
+                        <input type="text" id="kilometri" class="borderBordeaux rounded-2">
 
                     </div>
 
-                    <div>
-                        <p class="text-capitalize fw-bold ">codice cP</p>
-                        <p></p>
-
+                    <div class="text-center">
+                        <p class="text-capitalize colorBordeaux fs-4">fascia d'età</p>
+                        <input type="text" id="eta" class="borderBordeaux rounded-2">
                     </div>
+                </div>
 
-                    <div>
-                        <p class="text-capitalize fw-bold ">costo biglietto</p>
-                        <p id="totaleRisultato"></p>
+
+
+                <div class="py-5">
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <button id="bottone" class="colorBordeaux text-capitalize rounded-3 fw-bold  fs-4">
+                            genera
+                        </button>
+
+                        <button id="bottoneAnnulla" class="colorBordeaux text-capitalize rounded-3 fw-bold  fs-4">
+                            annulla
+                        </button>
                     </div>
 
                 </div>
+
+            </div>
+
+            <div class="pt-5">
+                <h2 class="text-white text-uppercase text-center m-0">il tuo biglietto</h2>
             </div>
 
 
+            <div class="bg-white col-10 m-auto p-3 border border-secondary my-5">
 
+                <div class="p-2">
+                    <h3 class="text-uppercase">dettaglio passeggeri</h3>
+                </div>
+
+                <div class="d-flex border-top border-bottom border-2 border-secondary ">
+
+                    <div class="bg-secondary me-2 p-2">
+                        <h3 class="text-uppercase fs-4">nome passeggero</h3>
+                        <p id="risultatoNomeOutput" class="text-capitalize fw-bold fs-4"></p>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between w-75 p-2">
+                        <div>
+                            <p class="text-capitalize fw-bold ">offerta</p>
+                            <p class="fw-bolder">Biglietto standard</p>
+
+                        </div>
+
+                        <div>
+                            <p class="text-capitalize fw-bold ">carozza</p>
+                            <p id="carozzaAssegnata"></p>
+
+                        </div>
+
+                        <div>
+                            <p class="text-capitalize fw-bold ">codice cP</p>
+                            <p id="codiceCp"></p>
+
+                        </div>
+
+                        <div>
+                            <p class="text-capitalize fw-bold ">costo biglietto</p>
+                            <p id="totaleRisultato"></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
 
 
 
     </main>
-
-
-
     
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
