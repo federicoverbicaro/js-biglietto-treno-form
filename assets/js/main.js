@@ -2,10 +2,12 @@ const button = document.getElementById("bottone")
 
 button.addEventListener("click", function () {
 
+    let nome = document.getElementById("risultatoNome").value
+
     let kilometri = parseFloat(document.getElementById("kilometri").value)
     let anniUtente = parseInt(document.getElementById("eta").value)
     let totaleRisultato = document.getElementById("totaleRisultato")
-
+    
 
 
     const tariffaKilometro = 0.21
@@ -25,4 +27,6 @@ button.addEventListener("click", function () {
         console.log(totale)
 
     }
+
+    document.getElementById("risultatoNomeOutput").textContent = nome
 })
