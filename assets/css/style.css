@@ -1,0 +1,11 @@
+.coloreBordeaux{
+background-color: rgb(185,19,80);
+}
+
+.colorBordeaux{
+    color:rgb(185,19,80);
+}
+
+.borderBordeaux{
+    border-color:rgb(185,19,80);
+}
